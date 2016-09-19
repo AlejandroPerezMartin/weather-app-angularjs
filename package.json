@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroPerezMartin/weather-app-angularjs.git"
+  },
+  "keywords": [
+    "weather",
+    "app"
+  ],
+  "author": "Alejandro Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejandroPerezMartin/weather-app-angularjs/issues"
+  },
+  "homepage": "https://github.com/AlejandroPerezMartin/weather-app-angularjs#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

@@ -1,0 +1,46 @@
+
+<!--  Autocomplete city form -->
+<md-autocomplete md-no-cache="true"
+                 md-selected-item="vm.selectedItem"
+                 md-search-text-change="vm.search(vm.searchText)"
+                 md-search-text="vm.searchText"
+                 md-selected-item-change="vm.getWeather(vm.searchText)"
+                 md-items="item in vm.search(vm.searchText)"
+                 md-item-text="item"
+                 md-min-length="0"
+                 placeholder="Type a place...">
+  <md-item-template>
+    <span md-highlight-text="vm.searchText" md-highlight-flags="^i">{{item}}</span>
+  </md-item-template>
+  <md-not-found>
+    No matches found for "{{vm.searchText}}".
+  </md-not-found>
+</md-autocomplete>
+
+<md-content style="height: 500px;">
+
+      <!--  Progress bar -->
+      <div layout="row" layout-sm="column" layout-align="center center" ng-show="vm.showLoading">
+        <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+      </div>
+
+      <!--  Weather list -->
+      <md-list flex ng-show="vm.weatherList.length > 0 && !vm.showLoading">
+
+        <md-subheader class="md-no-sticky">Weather in <strong>{{vm.selectedItem}}</strong></md-subheader>
+
+        <div ng-repeat="weather in vm.weatherList">
+            <md-divider></md-divider>
+
+            <md-subheader>{{weather.date}}</md-subheader>
+
+            <md-list-item class="md-3-line">
+              <img ng-src="http://openweathermap.org/img/w/{{weather.icon}}.png" class="md-avatar" alt="{{weather.main}}" />
+              <div class="md-list-item-text" layout="column">
+                <h3>{{weather.main}} - {{weather.temp}}&deg;</h3>
+                <h4>{{weather.description}}</h4>
+                <p></p>
+              </div>
+            </md-list-item>
+        </div>
+      </md-list>

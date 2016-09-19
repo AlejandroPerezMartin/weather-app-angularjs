@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+    <head>
+        <title>Weather App</title>
+        <meta charset="utf-8"></meta>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+        <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+        <link href="bower_components/angular-material/angular-material.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body layout="column" flex layout-fill ng-cloak>
+
+        <div ui-view="header"></div>
+        <div ui-view="content"></div>
+        <div ui-view="footer"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDG3tSSxqWGcsqa1Q5V07kpQiqwQP-VRU&libraries=places&types=(cities)&language=en_US"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+        <script src="bower_components/moment/min/moment.min.js"></script>
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers.js"></script>
+        <script src="scripts/services.js"></script>
+
+    </body>
+</html>
