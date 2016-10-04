@@ -6,5 +6,8 @@ Install dependencies: `bower install`, `npm install`
 
 Run `node server.js` in terminal and navigate to localhost:3000
 
+# Screenshot
+![Screenshot](screenshot.gif)
+
 ## Credits
 Alejandro Perez Martin
