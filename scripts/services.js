@@ -1,7 +1,7 @@
 
 angular.module('weatherApp')
 
-.constant('OWM_APIKEY', 'fc6e378fcfd970d319651c9959d0ce91')
+.constant('OWM_APIKEY', 'fc6e378fcfd970d319651c9959d0ce91') // Get your own key: https://console.developers.google.com/
 
 .service('weatherService', ['$http', '$resource', 'OWM_APIKEY', function($http, $resource, OWM_APIKEY){
 
