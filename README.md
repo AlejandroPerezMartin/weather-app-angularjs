@@ -1,4 +1,6 @@
 # AngularJS Weather App
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/AlejandroPerezMartin/weather-app-angularjs.svg)](https://greenkeeper.io/)
 AngularJS Weather App using Open Weather Maps and Google Places Autocomplete Predictions
 
 # Screenshot
